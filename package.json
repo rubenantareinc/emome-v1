@@ -1,20 +1,17 @@
 {
-  "name": "emome-v1",
+  "name": "emome",
+  "version": "1.0.0",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm:server\" \"npm --prefix client run dev\"",
-    "server": "nodemon server.js",
-    "build": "npm --prefix client run build",
-    "start": "node server.js"
+    "start": "node server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.0",
     "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "uuid": "^9.0.1"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.0",
-    "nodemon": "^3.0.3"
   }
 }
