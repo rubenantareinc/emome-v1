@@ -1,16 +1,11 @@
 {
   "name": "emome",
   "version": "1.0.0",
-  "scripts": {
-  "build": "cd client && npm install && npm run build"
-}
-
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "start": "node server.js",
-    "client": "cd client && npm run dev",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "express": "^4.19.2",
