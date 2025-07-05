@@ -1,6 +1,10 @@
 {
   "name": "emome",
   "version": "1.0.0",
+  "scripts": {
+  "build": "cd client && npm install && npm run build"
+}
+
   "main": "server.js",
   "type": "module",
   "scripts": {
