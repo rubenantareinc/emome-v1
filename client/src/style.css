@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  font-family: 'Arial', sans-serif;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+h1, h2, h3 {
+  color: #e74c3c;
+}
